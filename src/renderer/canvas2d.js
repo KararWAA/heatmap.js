@@ -145,8 +145,8 @@ var Canvas2dRenderer = (function Canvas2dRendererClosure() {
     setDimensions: function (width, height) {
       this._width = width;
       this._height = height;
-      this.canvas.width = this.shadowCanvas.width = width;
-      this.canvas.height = this.shadowCanvas.height = height;
+      this.canvas.width = this.shadowCanvas.width = 1366;
+      this.canvas.height = this.shadowCanvas.height = 766;
     },
     _clear: function () {
       this.shadowCtx.clearRect(0, 0, this._width, this._height);
