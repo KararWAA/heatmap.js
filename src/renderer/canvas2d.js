@@ -95,14 +95,8 @@ var Canvas2dRenderer = (function Canvas2dRendererClosure() {
 
     canvas.className = "heatmap-canvas";
 
-    this._width =
-      canvas.width =
-      shadowCanvas.width =
-        config.width || +computed.width.replace(/px/, "");
-    this._height =
-      canvas.height =
-      shadowCanvas.height =
-        config.height || +computed.height.replace(/px/, "");
+    this._width = 1336;
+    this._height = 768;
 
     this.shadowCtx = shadowCanvas.getContext("2d", {
       willReadFrequently: true,
